@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strojní konstruktér</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #ffa500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 18px;
+      color: #ffcc80;
+    }
+
+    .section {
+      max-width: 800px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ffa500;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .contact p {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+    }
+
+    /* CV buttons and panel */
+    .cv-button, .cv-download {
+      background-color: #ffa500;
+      color: #121212;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      margin-right: 10px;
+    }
+
+    .cv-button:hover, .cv-download:hover {
+      background-color: #ff8c00;
+    }
+
+    .cv-panel {
+      max-width: 800px;
+      width: 100%;
+      background-color: #1e1e1e;
+      border: 1px solid #ffa500;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      display: none;
+      color: #fff8e1;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 32px;
+      }
+
+      .tagline {
+        font-size: 16px;
+      }
+
+      .cv-button, .cv-download {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">⛭ Strojní konstruktér</div>
+    <div class="tagline">Profesionální konstrukční služby</div>
+  </header>
+
+  <section class="section">
+    <h2>Služby</h2>
+    <ul>
+      <li>✔️ 3D modelování</li>
+      <li>✔️ Výkresová dokumentace</li>
+      <li>✔️ Montážní dokumentace</li>
+      <li>✔️ Kusovníky a další podklady</li>
+    </ul>
+  </section>
+
+  <section class="section contact">
+    <h2>Kontakt</h2>
+    <p>📞 +420 797 615 825</p>
+    <p>📧 denisryazanov1989@gmail.com</p>
+  </section>
+
+  <section class="section">
+    <button class="cv-button" onclick="toggleCV()">📄 Životopis (zobrazit)</button>
+    <a href="CV_Riazanov_konstruktér_2025.pdf" class="cv-download" download>⬇️ Stáhnout životopis (PDF)</a>
+
+    <div class="cv-panel" id="cv-panel">
+      <h3>Životopis</h3>
+      <p><strong>Jméno:</strong> Ing. Denys Riazanov</p>
+      <p><strong>Obor:</strong> Strojní konstruktér</p>
+      <p><strong>Praxe:</strong> Více než 10 let praxe v oblasti konstrukce, návrhů výrobků, práce v SolidWorks, AutoCAD, VariCAD, atd.</p>
+      <p><strong>Znalosti:</strong> SolidWorks, AutoCAD, TeamCenter, Solid Edge, TPV2000, VariCAD, Excel, Word</p>
+      <p><strong>Jazyky:</strong> Ruština (rodilý), Ukrajinština (rodilý), Čeština (B1), Angličtina (A2)</p>
+      <p><strong>Řidičský průkaz:</strong> Skupina B</p>
+      <p><strong>Trvalý pobyt:</strong> Česká republika</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Strojní konstruktér. Všechna práva vyhrazena.
+  </footer>
+
+  <script>
+    function toggleCV() {
+      const panel = document.getElementById('cv-panel');
+      panel.style.display = panel.style.display === 'none' || panel.style.display === '' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
