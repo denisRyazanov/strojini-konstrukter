@@ -39,7 +39,7 @@
     li { margin-bottom: 10px; font-size: 18px; }
     .contact p { font-size: 18px; margin: 8px 0; }
     footer { margin-top: auto; text-align: center; font-size: 14px; color: #888; }
-    .cv-button {
+    .info-button {
       background-color: #ffa500;
       color: #121212;
       border: none;
@@ -93,7 +93,7 @@
     </section>
 
     <section class="section">
-      <button class="info-button" onclick="toggleCV()">Zobrazit Informace</button>
+      <button class="info-button" onclick="toggleINF()">Zobrazit Informace</button>
      
       <div class="infromace" id="infromace">
         <h3>Informace</h3>
@@ -113,7 +113,7 @@
   </div>
 
   <script>
-    function toggleCV() {
+    function toggleINF() {
       const panel = document.getElementById('infromace');
       panel.style.display = panel.style.display === 'none' || panel.style.display === '' ? 'block' : 'none';
     }
