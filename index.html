@@ -39,7 +39,7 @@
     li { margin-bottom: 10px; font-size: 18px; }
     .contact p { font-size: 18px; margin: 8px 0; }
     footer { margin-top: auto; text-align: center; font-size: 14px; color: #888; }
-    .cv-button, .cv-download {
+    .cv-button {
       background-color: #ffa500;
       color: #121212;
       border: none;
@@ -50,8 +50,8 @@
       transition: background-color 0.3s ease;
       margin-right: 10px;
     }
-    .cv-button:hover, .cv-download:hover { background-color: #ff8c00; }
-    .cv-panel {
+    .info-button:hover { background-color: #ff8c00; }
+    .info-panel {
       max-width: 800px;
       width: 100%;
       background-color: #1e1e1e;
@@ -65,7 +65,7 @@
     @media (max-width: 600px) {
       .logo { font-size: 32px; }
       .tagline { font-size: 16px; }
-      .cv-button, .cv-download { width: 100%; margin-bottom: 10px; margin-right: 0; }
+      .info-button { width: 100%; margin-bottom: 10px; margin-right: 0; }
     }
   </style>
 </head>
@@ -93,11 +93,10 @@
     </section>
 
     <section class="section">
-      <button class="cv-button" onclick="toggleCV()">Zobrazit Informace</button>
-      <a href="CV_Riazanov_konstruktér_2025.pdf" class="cv-download" download>⬇️ Stáhnout životopis (PDF)</a>
-
+      <button class="info-button" onclick="toggleCV()">Zobrazit Informace</button>
+     
       <div class="infromace" id="infromace">
-        <h3>Životopis</h3>
+        <h3>Informace</h3>
         <p><strong>Jméno:</strong> Ing. Denys Riazanov</p>
         <p><strong>Obor:</strong> Strojní konstruktér</p>
         <p><strong>Praxe:</strong> Více než 10 let praxe v oblasti konstrukce, návrhů výrobků, práce v SolidWorks, Solid Edge, atd.</p>
