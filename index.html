@@ -94,7 +94,7 @@
 
     <section class="section">
       <button class="info-button" onclick="toggleINF()">Zobrazit Informace</button>
-     
+      <button class="cenik-button" onclick="toggleCEN()">CENÍK</button>
       <div class="infromace" id="infromace">
         <h3>Informace</h3>
         <p><strong>Jméno:</strong> Ing. Denys Riazanov</p>
@@ -105,6 +105,16 @@
         <p><strong>Řidičský průkaz:</strong> Skupina B</p>
         <p><strong>Trvalý pobyt:</strong> Česká republika</p>
       </div>
+      <div class="cenik" id="cenik">
+        <h3>cenik</h3>
+        <p><strong>Jméno:</strong> Ing. Denys Riazanov</p>
+        <p><strong>Obor:</strong> Strojní konstruktér</p>
+        <p><strong>Praxe:</strong> Více než 10 let praxe v oblasti konstrukce, návrhů výrobků, práce v SolidWorks, Solid Edge, atd.</p>
+        <p><strong>Znalosti:</strong> SolidWorks, Solid Edge, TeamCenter, AutoCAD, TPV2000, VariCAD, Excel, Word</p>
+        <p><strong>Jazyky:</strong> Čeština (B1), Ruština (rodilý), Ukrajinština (rodilý), , Angličtina (A2)</p>
+        <p><strong>Řidičský průkaz:</strong> Skupina B</p>
+        <p><strong>Trvalý pobyt:</strong> Česká republika</p>
+       </div>
     </section>
 
     <footer>
@@ -115,6 +125,10 @@
   <script>
     function toggleINF() {
       const panel = document.getElementById('infromace');
+      panel.style.display = panel.style.display === 'none' || panel.style.display === '' ? 'block' : 'none';
+    }
+    function toggleCEN() {
+      const panel = document.getElementById('cenik');
       panel.style.display = panel.style.display === 'none' || panel.style.display === '' ? 'block' : 'none';
     }
   </script>
